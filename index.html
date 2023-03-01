@@ -9,24 +9,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
   <title>Frontend Mentor | IP Address Tracker</title>
 </head>
 <body>
-
   <header class="header">
-    <h1>IP Address Tracker</h1>
-    <input type="search" aria-label="search bar" placeholder="Search for any IP address or domain">
+    <h1 class="header__title">IP Address Tracker</h1>
+    <div class="header__search">
+      <input class="header__search-bar" id="search-bar" type="search" aria-label="search bar" placeholder="Search for any IP address or domain">
+    <label class="header__search-button" for="search-bar"><img src="images/icon-arrow.svg" alt=""></label>
+    </div>
   </header>
-  <div class="card">
-    IP Address
-    Location
-    Timezone
-      UTC <!-- add offset value dynamically using the API -->
-    ISP
+  <section class="section">
+    <div class="card">
+      <div class="card__info">
+        <h2 class="card__title">IP Address</h2>
+        <span class="card__description">192.212.174.101</span>
+      </div>
+      <div class="card__info">
+        <h2 class="card__title">Location</h2>
+        <span class="card__description">Brooklyn, NY 10001</span>
+      </div>
+      <div class="card__info">
+        <h2 class="card__title">Timezone</h2>
+        <span class="card__description">UTC-05:00<!-- add offset value dynamically using the API --></span>
+      </div>
+      <div class="card__info">
+        <h2 class="card__title">ISP</h2>
+        <span class="card__description">SpaceX Starlink</span>
+      </div>
+    </div>
+  </section>
+  <div class="map" id="map">
   </div>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Natália S. R. S. Andrade</a>.
-  </div>
+    Coded by <a href="https://github.com/natalia-sampaio">Natália S. R. S. Andrade</a>.
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
