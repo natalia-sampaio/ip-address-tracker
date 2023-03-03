@@ -12,42 +12,43 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <title>IP Address Tracker</title>
 </head>
 <body>
   <header class="header">
     <h1 class="header__title">IP Address Tracker</h1>
     <div class="header__search">
       <input class="header__search-bar" id="search-bar" type="search" aria-label="search bar" placeholder="Search for any IP address or domain">
-    <label class="header__search-button" for="search-bar"><img src="images/icon-arrow.svg" alt=""></label>
+      <label class="header__search-button" id="search-button" for="search-bar"><img src="images/icon-arrow.svg" alt=""></label>
     </div>
   </header>
   <section class="section">
     <div class="card">
       <div class="card__info">
         <h2 class="card__title">IP Address</h2>
-        <span class="card__description">192.212.174.101</span>
+        <span class="card__description" id="ip-address"></span>
       </div>
       <div class="card__info">
         <h2 class="card__title">Location</h2>
-        <span class="card__description">Brooklyn, NY 10001</span>
+        <span class="card__description" id="location"></span>
       </div>
       <div class="card__info">
         <h2 class="card__title">Timezone</h2>
-        <span class="card__description">UTC-05:00<!-- add offset value dynamically using the API --></span>
+        <span class="card__description" id="timezone"></span>
       </div>
       <div class="card__info">
         <h2 class="card__title">ISP</h2>
-        <span class="card__description">SpaceX Starlink</span>
+        <span class="card__description" id="isp"></span>
       </div>
     </div>
   </section>
   <div class="map" id="map">
   </div>
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/natalia-sampaio">Natália S. R. S. Andrade</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.| 
+    Coded by <a href="https://github.com/natalia-sampaio">Natália S. R. S. Andrade</a>.|
+    Map data from ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
   </footer>
-  <script src="main.js"></script>
+  <script src="./js/main.js" type="module"></script>
 </body>
 </html>

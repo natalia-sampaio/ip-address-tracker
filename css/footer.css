@@ -4,4 +4,6 @@
     font-size: 12px;
     font-weight: 400;
     color: var(--very-dark-gray);
+    background: white;
+    padding: .5em;
 }

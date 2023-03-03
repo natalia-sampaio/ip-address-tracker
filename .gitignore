@@ -13,3 +13,9 @@
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
+
+apiKey.js
+generateMap.js
+getUserIpAddress.js
+searchIpAddress.js
+updatePage.js

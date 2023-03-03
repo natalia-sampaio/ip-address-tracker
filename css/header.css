@@ -29,14 +29,29 @@
 }
 
 .header__search-button {
+    display: flex;
+    align-items: center;
     background: black;
     padding: 1em;
     border: 0;
     border-radius: 0 1em 1em 0;
 }
 
+.header__search-button:hover {
+    cursor: pointer;
+}
+
+.header__search-button:active {
+    background: var(--very-dark-gray);
+}
+
 @media screen and (min-width: 1024px) {
     .header__search-bar {
         width: 35%;
+        padding: 1.2em;
+    }
+
+    .header__search-button {
+        padding: 1.5em;
     }
 }
