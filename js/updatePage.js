@@ -1,5 +1,5 @@
 import { generateMap } from "./generateMap.js";
-import { updateCardInfo } from "./updateCardInfo.js";
+import { updateKeyInfo } from "./updateKeyInfo.js";
 
 export function updatePage(address) {
     const ipAddress = address.ip;
@@ -19,5 +19,5 @@ export function updatePage(address) {
 
     const isp = address.isp;
 
-    updateCardInfo(ipAddress, country, city, region, postalCode, timezone, isp);
+    updateKeyInfo(ipAddress, country, city, region, postalCode, timezone, isp);
 }

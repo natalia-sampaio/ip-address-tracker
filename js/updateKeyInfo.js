@@ -1,4 +1,4 @@
-export function updateCardInfo(ipAddress, country, city, region, postalCode, timezone, isp) {
+export function updateKeyInfo(ipAddress, country, city, region, postalCode, timezone, isp) {
     const ipAddressSlot = document.getElementById('ip-address');
     ipAddressSlot.innerHTML = `${ipAddress}`;
 
