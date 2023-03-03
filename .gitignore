@@ -15,7 +15,3 @@
 .DS_Store
 
 apiKey.js
-generateMap.js
-getUserIpAddress.js
-searchIpAddress.js
-updatePage.js
