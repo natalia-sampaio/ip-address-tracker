@@ -1,5 +1,10 @@
+var map = null;
+
 export function generateMap(coordinates, ipAddress) {
-    var map = L.map('map').setView(coordinates, 13);
+    if (map !== undefined && map !== null) {
+        map.remove();
+    }
+    map = L.map('map').setView(coordinates, 13);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,

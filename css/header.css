@@ -45,6 +45,19 @@
     background: var(--very-dark-gray);
 }
 
+.error-message {
+    font-weight: 400;
+    color: red;
+    display: flex;
+    justify-content: start;
+    margin-top: 1em;
+    padding-left: 7%;
+}
+
+.header__search-bar--erro {
+    border: 2px solid red;
+}
+
 @media screen and (min-width: 1024px) {
     .header__search-bar {
         width: 35%;
@@ -53,5 +66,9 @@
 
     .header__search-button {
         padding: 1.5em;
+    }
+
+    .error-message {
+        padding-left: 31%;
     }
 }

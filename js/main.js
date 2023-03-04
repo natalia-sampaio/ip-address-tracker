@@ -9,12 +9,24 @@ const searchButton = document.getElementById('search-button');
 searchBar.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
-        searchIpAddress(this.value);
-        searchBar.value = "";
+        if (searchBar.value === "") {
+            searchBar.classList.add('header__search-bar--erro');
+            document.getElementById('error-message').innerHTML = `Invalid input! Empty search is not valid.`;
+        } else {
+            searchIpAddress(searchBar.value);
+            searchBar.value = "";
+            searchBar.blur();
+        }
     }
 });
 
 searchButton.addEventListener("click", () => {
-    searchIpAddress(searchBar.value);
-    searchBar.value = "";
+    if (searchBar.value === "") {
+        searchBar.classList.add('header__search-bar--erro');
+        document.getElementById('error-message').innerHTML = `Invalid input! Empty search is not valid.`;
+    } else {
+        searchIpAddress(searchBar.value);
+        searchBar.value = "";
+        searchBar.blur();
+    }
 });
