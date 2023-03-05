@@ -1,14 +1,14 @@
 import { generateMap } from "./generateMap.js";
 import { updateKeyInfo } from "./updateKeyInfo.js";
 
-export function updatePage(response) {
+export function updatePage(response, popupMessage) {
     const ipAddress = response.ip;
 
     const lat = response.location.lat;
     const lng = response.location.lng;
     const coordinates = [lat, lng];
 
-    generateMap(coordinates, ipAddress);
+    generateMap(coordinates, popupMessage);
 
     const country = response.location.country;
     const region = response.location.region;

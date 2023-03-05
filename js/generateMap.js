@@ -1,6 +1,6 @@
 var map = null;
 
-export function generateMap(coordinates, ipAddress) {
+export function generateMap(coordinates, popupMessage) {
     if (map !== undefined && map !== null) {
         map.remove();
     }
@@ -20,6 +20,6 @@ export function generateMap(coordinates, ipAddress) {
     });
 
     L.marker(coordinates, { icon: customIcon }).addTo(map)
-        .bindPopup(ipAddress)
+        .bindPopup(popupMessage)
         .openPopup();
 }
