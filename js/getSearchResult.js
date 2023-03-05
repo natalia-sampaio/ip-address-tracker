@@ -10,7 +10,7 @@ export function getSearchResult() {
             event.preventDefault();
             if (searchBar.value === "") {
                 searchBar.classList.add('header__search-bar--erro');
-                message.innerHTML = "Empty search is not valid.";
+                message.innerHTML = "&#9888 Empty search is not valid.";
             } else {
                 searchIpAddress(searchBar.value);
             }
@@ -22,7 +22,7 @@ export function getSearchResult() {
             searchIpAddress(searchBar.value);
         } else {
             searchBar.classList.add('header__search-bar--erro');
-            message.innerHTML = "Empty search is not valid.";
+            message.innerHTML = "&#9888 Empty search is not valid.";
         }
     });
 }

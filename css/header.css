@@ -46,8 +46,8 @@
 }
 
 .error-message {
-    font-weight: 400;
-    color: red;
+    font-weight: 500;
+    color: rgb(253, 191, 4);
     display: flex;
     justify-content: start;
     margin-top: 1em;
@@ -55,7 +55,7 @@
 }
 
 .header__search-bar--erro {
-    border: 2px solid red;
+    border: 2px solid rgb(253, 191, 4);
 }
 
 @media screen and (min-width: 1024px) {
