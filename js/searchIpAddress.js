@@ -3,9 +3,9 @@ import { displayErrorMessage} from "./displayErrorMessage.js";
 import { clearSearchBar, resetSearchBarErrorState } from "./resetSearchBar.js";
 import { updatePage } from "./updatePage.js";
 
-export async function searchIpAddress(searchedIpAddress, popupMessage) {
+export async function searchIpAddress(searchedIpAddressOrDomain, popupMessage) {
     resetSearchBarErrorState();
-    const url = `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&domain=${searchedIpAddress}`;
+    const url = `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&domain=${searchedIpAddressOrDomain}`;
 
     try {
         const response = await fetch(url);
@@ -17,7 +17,7 @@ export async function searchIpAddress(searchedIpAddress, popupMessage) {
         const responseJson = await response.json();
         clearSearchBar();
         if(!popupMessage) {
-            popupMessage = "This is the location of the IP Address or domain you searched.";
+            popupMessage = `This is the location of ${searchedIpAddressOrDomain}`;
         }
         return updatePage(responseJson, popupMessage);
     } catch (error) {
