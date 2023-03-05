@@ -1,23 +1,23 @@
 import { generateMap } from "./generateMap.js";
 import { updateKeyInfo } from "./updateKeyInfo.js";
 
-export function updatePage(address) {
-    const ipAddress = address.ip;
+export function updatePage(response) {
+    const ipAddress = response.ip;
 
-    const lat = address.location.lat;
-    const lng = address.location.lng;
+    const lat = response.location.lat;
+    const lng = response.location.lng;
     const coordinates = [lat, lng];
 
     generateMap(coordinates, ipAddress);
 
-    const country = address.location.country;
-    const region = address.location.region;
-    const city = address.location.city;
-    const postalCode = address.location.postalCode;
+    const country = response.location.country;
+    const region = response.location.region;
+    const city = response.location.city;
+    const postalCode = response.location.postalCode;
 
-    const timezone = address.location.timezone;
+    const timezone = response.location.timezone;
 
-    const isp = address.isp;
+    const isp = response.isp;
 
     updateKeyInfo(ipAddress, country, city, region, postalCode, timezone, isp);
 }
