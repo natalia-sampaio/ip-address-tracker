@@ -1,6 +1,16 @@
-# Frontend Mentor - IP address tracker solution
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=95b6f8&height=120&section=header"/>
 
-This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+<h1 align="center">IP address tracker solution</h1>
+
+<div align="center">
+
+![STATUS](https://img.shields.io/badge/status-deployed-6bffb0?style=for-the-badge)&nbsp;
+![HTML 5](https://img.shields.io/badge/-HTML-0D1117?style=for-the-badge&logo=html5&logoColor=f45430&labelColor=0D1117)&nbsp;
+![CSS](https://img.shields.io/badge/-CSS-0D1117?style=for-the-badge&logo=CSS3&logoColor=1572B6&labelColor=0D1117)&nbsp;
+![JavaScript](https://img.shields.io/badge/-JavaScript-0D1117?style=for-the-badge&logo=javascript&labelColor=0D1117)&nbsp;
+</div>
+
+This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
 
 ## Table of contents
 
@@ -16,8 +26,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,20 +37,25 @@ Users should be able to:
 - See their own IP address on the map on the initial page load
 - Search for any IP addresses or domains and see the key information and location
 
+Extra features:
+- Error handling
+- Not allow empty request
+- Display error messages to the user
+
 ### Screenshots
 
 <div align="center">
 
-![Screenshot of initial page load on mobile](./images/Screenshot%202023-03-05%20at%2012-25-21%20IP%20Address%20Tracker.png)
-![Screenshot of search page on mobile](./images/Screenshot%202023-03-05%20at%2012-25-51%20IP%20Address%20Tracker.png)
-![Screenshot of initial page load on desktop](./images/Screenshot%202023-03-05%20at%2012-24-43%20IP%20Address%20Tracker.png)
-![Screenshot of search page load on desktop](./images/Screenshot%202023-03-05%20at%2012-25-59%20IP%20Address%20Tracker.png)
+<img src="./images/Screenshot%202023-03-05%20at%2012-25-21%20IP%20Address%20Tracker.png" height="500px">
+<img src="./images/Screenshot%202023-03-05%20at%2012-25-51%20IP%20Address%20Tracker.png" height="500px">
+<img src="./images/Screenshot%202023-03-05%20at%2012-24-43%20IP%20Address%20Tracker.png" width=>
+<img src="./images/Screenshot%202023-03-05%20at%2012-25-59%20IP%20Address%20Tracker.png">
 </div>
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/natalia-sampaio/ip-address-tracker)
-- Live Site URL: [Vercel](https://ip-address-tracker-six-snowy.vercel.app/)
+- Live Site URL: [Vercel](https://ip-address-tracker-qbqnc5mx8-natalia-sampaio.vercel.app/)
 
 ## My process
 
@@ -111,10 +124,15 @@ I would like to keep improving the use of JavaScript and also learn Vue.js 3.
 
 ## Author
 
-- Website - [Natália S. R. S. Andrade](https://natalia-sampaio.github.io/)
-- Frontend Mentor - [@natalia-sampaio](https://www.frontendmentor.io/profile/natalia-sampaio)
-- Twitter - [@NataliaSRSA](https://twitter.com/NataliaSRSA)
+<a href="natalia.srsa@proton.me"><img src="https://img.shields.io/badge/-Email-0D1117?style=for-the-badge&logo=protonmail&labelColor=0D1117&textColor=0D1117"/></a>
+
+<a href="https://www.linkedin.com/in/natalia-srs/"><img src="https://img.shields.io/badge/-LinkedIn-0D1117?style=for-the-badge&logo=linkedin&labelColor=0D1117&textColor=0D1117"/></a>
+
+<a href="https://twitter.com/NataliaSRSA"><img src="https://img.shields.io/badge/-Twitter-0D1117?style=for-the-badge&logo=twitter&labelColor=0D1117&textColor=0D1117"/></a>
 
 ## Acknowledgments
 
 My husband [@filipedanielski](https://twitter.com/filipedanielski) who is always supporting and encouraging me.
+
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=95b6f8&height=100&section=footer"/>
