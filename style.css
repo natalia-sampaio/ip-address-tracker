@@ -1,7 +1,7 @@
-@import "./css/header.css";
-@import "./css/section.css";
-@import "./css/map.css";
-@import "./css/footer.css";
+@import "./assets/css/header.css";
+@import "./assets/css/section.css";
+@import "./assets/css/map.css";
+@import "./assets/css/footer.css";
 
 :root {
     --very-dark-gray: hsl(0, 0%, 17%);
@@ -13,13 +13,13 @@ body {
     font-family: var(--font);
     font-size: 18px;
     font-weight: 500;
-    background: url("images/pattern-bg-mobile.png") no-repeat;
+    background: url("./assets/images/pattern-bg-mobile.png") no-repeat;
     background-size: cover;
 }
 
 @media screen and (min-width: 1024px) {
     body {
-        background: url("images/pattern-bg-desktop.png") no-repeat;
+        background: url("./assets/images/pattern-bg-desktop.png") no-repeat;
         background-size: cover;
     }
 }
