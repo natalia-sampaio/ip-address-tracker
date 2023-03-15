@@ -46,10 +46,10 @@ Extra features:
 
 <div align="center">
 
-<img src="./images/Screenshot%202023-03-05%20at%2012-25-21%20IP%20Address%20Tracker.png" height="500px">
-<img src="./images/Screenshot%202023-03-05%20at%2012-25-51%20IP%20Address%20Tracker.png" height="500px">
-<img src="./images/Screenshot%202023-03-05%20at%2012-24-43%20IP%20Address%20Tracker.png" width=>
-<img src="./images/Screenshot%202023-03-05%20at%2012-25-59%20IP%20Address%20Tracker.png">
+<img src="./assets/images/Screenshot%202023-03-05%20at%2012-25-21%20IP%20Address%20Tracker.png" height="500px">
+<img src="./assets/images/Screenshot%202023-03-05%20at%2012-25-51%20IP%20Address%20Tracker.png" height="500px">
+<img src="./assets/images/Screenshot%202023-03-05%20at%2012-24-43%20IP%20Address%20Tracker.png" width=>
+<img src="./assets/images/Screenshot%202023-03-05%20at%2012-25-59%20IP%20Address%20Tracker.png">
 </div>
 
 ### Links
